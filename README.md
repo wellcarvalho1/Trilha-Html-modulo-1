@@ -15,11 +15,11 @@ Esta página web simples fornece informações sobre Albert Einstein, incluindo 
 
 ## Como Executar
 
-Basta abrir o arquivo `einstein.html` em qualquer navegador web.
+Basta abrir o arquivo `index.html` em qualquer navegador web.
 
 ## Arquivos
 
-* `einstein.html`: Contém o código HTML da página.
+* `index.html`: Contém o código HTML da página.
 
 ## Observações
 
