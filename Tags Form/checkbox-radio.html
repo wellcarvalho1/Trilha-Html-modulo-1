@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura a viewport para adaptação responsiva -->
+    <title>Cardapio Pizza</title>
+    <!-- Define o título da página -->
+  </head>
+  <body>
+    <form method="get">
+      <!-- Define um formulário com o método GET -->
+      <h3>Você selecionou: Pizza de Calabresa</h3>
+      <!-- Exibe o nome da pizza -->
+      <p>Quais opcionais deseja?</p>
+      <!-- Rótulo para os opcionais -->
+      <input type="checkbox" disabled name="opcional[]" value="catupiry" /> +
+      Queijo <br />
+      <!-- Checkbox para queijo, desabilitado -->
+      <input type="checkbox" name="opcional[]" value="presunto" /> + Presunto
+      <br />
+      <!-- Checkbox para presunto -->
+      <input type="checkbox" name="opcional[]" value="bacon" /> + Bacon <br />
+      <!-- Checkbox para bacon -->
+      <input type="checkbox" name="opcional[]" value="ovo" /> + Ovo <br />
+      <!-- Checkbox para ovo -->
+      <p>Borda recheada?</p>
+      <!-- Rótulo para a borda recheada -->
+      <input type="radio" name="recheio" value="sim" />Sim <br />
+      <!-- Radio button para borda recheada (sim) -->
+      <input type="radio" name="recheio" value="nao" />Não <br />
+      <!-- Radio button para borda recheada (não) -->
+      <p>Bebida</p>
+      <!-- Rótulo para a bebida -->
+      <input type="radio" name="bebida" value="suco" />Suco <br />
+      <!-- Radio button para suco -->
+      <input type="radio" name="bebida" value="refrigerante" />refrigerante
+      <br />
+      <!-- Radio button para refrigerante -->
+      <input type="radio" name="bebida" value="agua" />Água <br />
+      <!-- Radio button para água -->
+      <input type="radio" name="bebida" value="nenhum" />Nenhum <br /><br />
+      <!-- Radio button para nenhuma bebida -->
+
+      <button type="button" style="color: red">Enviar</button>
+      <!-- Botão para enviar o formulário -->
+    </form>
+  </body>
+</html>

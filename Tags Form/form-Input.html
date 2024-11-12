@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />  <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  <!-- Configura a viewport para adaptação responsiva -->
+    <title>Formulario de Cadastro</title>  <!-- Define o título da página -->
+  </head>
+  <body>
+    <!-- TAG FORM -->
+    <form
+      name="signup"  <!-- Define o nome do formulário como "signup" -->
+      onsubmit="alert('Formulario enviado')"  <!-- Executa um alerta ao submeter o formulário -->
+      method="post"  <!-- Define o método de envio como POST -->
+      action="https://meuformulario.com.br/signup"  <!-- Define a URL para onde o formulário será enviado -->
+    >
+      Nome: <input type="text" name="name" /><br />  <!-- Campo de texto para o nome -->
+      Idade: <input type="number" name="age" /><br />  <!-- Campo numérico para a idade -->
+      Senha: <input type="password" name="password" /><br />  <!-- Campo de senha -->
+      <button type="submit">Enviar</button>  <!-- Botão para enviar o formulário -->
+    </form>
+    <br />
+
+    <!-- Examples TAG INPUT -->
+    <form>  <!-- Outro formulário para demonstração de tipos de input -->
+      <label>Text: </label><input type="text" /><br />  <!-- Campo de texto -->
+      <label>Number: </label
+      ><input type="number" min="0" step="5" max="99" /><br />  <!-- Campo numérico com restrições -->
+      <label>Range: </label
+      ><input type="range" min="0" max="100" value="50" /><br />  <!-- Campo de controle deslizante -->
+      <label>Color: </label><input type="color" /><br />  <!-- Campo para escolher uma cor -->
+      <label>Email: </label><input type="email" /><br />  <!-- Campo para inserir um email -->
+      <label>Url: </label><input type="url" /><br />  <!-- Campo para inserir uma URL -->
+      <label>Date: </label><input type="date" /><br />  <!-- Campo para escolher uma data -->
+      <label>Week: </label><input type="week" /><br />  <!-- Campo para escolher uma semana -->
+      <label>Month: </label><input type="month" /><br />  <!-- Campo para escolher um mês -->
+      <label>Time: </label><input type="time" /><br />  <!-- Campo para escolher um horário -->
+      <label>Checkbox: </label><input type="checkbox" /><input
+        type="checkbox"
+      /><br />  <!-- Dois checkboxes -->
+      <label>Radio: </label><input type="radio" name="alternative" /><input
+        type="radio"
+        name="alternative"
+      /><br />  <!-- Dois radio buttons -->
+      <label>Hidden: </label><input type="hidden" /><br />  <!-- Campo oculto -->
+      <label>File: </label><input type="file" multiple /><br />  <!-- Campo para selecionar arquivos -->
+      <label>Search: </label
+      ><input type="search" placeholder="Search..." /><button type="button">
+        Buscar</button
+      ><br />  <!-- Campo de pesquisa com botão -->
+      <label>Button: </label><input type="button" value="Enviar" /><br />  <!-- Botão -->
+    </form>
+  </body>
+</html>
