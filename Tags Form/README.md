@@ -1,6 +1,6 @@
 Tag FORM - Criando Formulários Web
 
-A tag <form> é fundamental para a criação de formulários web, permitindo que os usuários interajam com seu site e enviem informações. Neste guia, exploraremos as principais partes de um formulário.
+A tag FORM é fundamental para a criação de formulários web, permitindo que os usuários interajam com seu site e enviem informações. Neste guia, exploraremos as principais partes de um formulário.
 
 # Botões (button)
 
