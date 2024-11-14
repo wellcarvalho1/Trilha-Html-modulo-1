@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática com Fieldsets</title>
+    <style>
+        /* Estilos para os fieldsets, legendas, labels e linhas */
+        fieldset {
+            border: 1px solid #ccc;
+            /* Borda cinza clara */
+            padding: 5px;
+            /* Espaçamento interno */
+            margin-bottom: 5px;
+            /* Margem inferior */
+        }
+
+        legend {
+            font-weight: bold;
+            /* Texto em negrito */
+        }
+
+        label {
+            width: 100px;
+            /* Largura fixa para os labels */
+            text-align: right;
+            /* Alinha o texto à direita */
+            display: inline-block;
+            /* Torna o label um elemento de bloco inline */
+            padding-right: 5px;
+            /* Espaçamento à direita */
+        }
+
+        .row {
+            margin: 5px;
+            /* Margem para as linhas */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Título principal do formulário -->
+    <h1>Formulário de Pagamento</h1>
+
+    <!-- Fieldset para informações pessoais -->
+    <fieldset>
+        <legend>
+            <h2>Informações Pessoais</h2>
+        </legend>
+        <div class="row">
+            <label>Nome:</label><input type="text"> <!-- Campo de texto para o nome -->
+            <label>E-mail:</label><input type="text"> <!-- Campo de texto para o email -->
+            <label>CPF:</label><input type="text"> <!-- Campo de texto para o CPF -->
+            <div class="row">
+                <label>Profissão:</label><input type="text"> <!-- Campo de texto para a profissão -->
+                <label>Empresa:</label><input type="text"> <!-- Campo de texto para a empresa -->
+                <label>Telefone:</label><input type="text"> <!-- Campo de texto para o telefone -->
+            </div>
+        </div>
+    </fieldset>
+
+    <!-- Fieldset para o endereço -->
+    <fieldset>
+        <legend>
+            <h2>Endereço</h2>
+        </legend>
+        <div class="row">
+            <label>Rua:</label><input type="text"> <!-- Campo de texto para a rua -->
+            <label>Número:</label><input type="text"> <!-- Campo de texto para o número -->
+            <label>Bairro:</label><input type="text"> <!-- Campo de texto para o bairro -->
+        </div>
+    </fieldset>
+
+    <!-- Fieldset para informações de pagamento -->
+    <fieldset>
+        <legend>
+            <h2>Informações de Pagamento</h2>
+        </legend>
+        <div class="row">
+            <label>Forma de Pagamento:</label>
+            <!-- Menu dropdown para selecionar a forma de pagamento -->
+            <select>
+                <option value="">Selecione...</option>
+                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                <option value="Cartão de Débito">Cartão de Débito</option>
+                <option value="Boleto Bancário">Boleto Bancário</option>
+                <option value="Dinheiro">Dinheiro</option>
+            </select>
+            <label>Valor:</label><input type="text"> <!-- Campo de texto para o valor -->
+            <label>Parcelas:
+                <!-- Menu dropdown para selecionar o número de parcelas -->
+                <select>
+                    <option value="">Selecione...</option>
+                    <option value="1">1 x</option>
+                    <option value="2">2 x</option>
+                    <option value="3">3 x</option>
+                    <option value="4">4 x</option>
+                    <option value="5">5 x</option>
+                </select>
+            </label>
+        </div>
+    </fieldset>
+
+    <!-- Botões de limpar e enviar -->
+    <div class="row">
+        <button type="reset">Limpar</button> <!-- Botão para limpar o formulário -->
+        <button type="submit">Enviar</button> <!-- Botão para enviar o formulário -->
+    </div>
+</body>
+
+</html>
